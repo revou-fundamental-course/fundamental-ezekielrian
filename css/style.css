@@ -1,0 +1,156 @@
+/*Ini CSS*/
+
+main {
+    padding: 32px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    
+
+    background-image: url(https://picsum.photos/500/500);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav>a {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid;
+}
+
+.images {
+    
+    display: flex;
+    width:100%;
+    transition: 2s;
+}
+
+.images img {
+    width: 100%;
+}
+.wrapper {
+    width: 1020px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative
+}
+
+#slide-1:target~.images {
+    margin-left: 0%;
+}
+
+#slide-2:target~.images {
+    margin-left: -100%; ;
+}
+
+#slide-3:target~.images {
+    margin-left: -200%;
+}
+
+#slide-4:target~.images {
+    margin-left: -300%;
+}
+.navigation-wrapper a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #dedede;
+    font-size: 0px ;
+    border-radius: 50%;
+    margin: 3px;   
+    transition: 1s;
+}
+.navigation-wrapper a:hover {
+    background-color: #666
+}
+
+.navigation-wrapper {
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -50px;
+}
+
+@media screen and (max-width:1020px){
+    .wrapper {
+        width: 90%;
+    }
+}
+
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon{
+    height: 50px;
+    width: 50px;
+    
+/* ../assets*/
+    background-image: url(https://picsum.photos/500/500);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.profile-1 {
+    background-image: url(https://picsum.photos/id/237/500/500);
+}
+
+.profile-2 {
+    background-image:url(https://picsum.photos/id/22/500/500);
+}
+
+.profile-3 {
+    background-image:url(https://picsum.photos/id/64/500/500);
+}
+
+
+.form-data {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hasil-data {
+    border: 1px solid;
+    margin-left: 50px;
+    width: 600px;
+    
+}
+
+.menu-header a{
+    text-decoration: none;
+    border: 1px solid #000;
+    color:black;
+    padding: 5px;
+    border-radius: 10%
+}
+
+.divider {
+    flex:2
+}
+
+@media screen and (max-width: 480px) {
+    .nav-container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
