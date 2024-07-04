@@ -1,7 +1,8 @@
-
+    //Untuk menyesuaikan nama user//
     let namaa = prompt("Siapakah nama anda?","");
     document.getElementById("namaa").innerHTML = namaa
 
+    //Form setelah di submit//
     function validateForm() {
         const name = document.forms["message-form"]["full-name"].value;
         const birthDate = document.forms["message-form"]["birth-date"].value;
