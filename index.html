@@ -15,7 +15,7 @@
         <nav class="menu-header">
             <a href="#home">Home</a>
             <a href="#our-profile">Our Profile</a>
-            <a>Portofolio</a>
+            <a href="#portofolio">Portofolio</a>
             <a href="#message-us">Message Us</a>
         </nav>
     </header>
@@ -26,11 +26,11 @@
     <section id="home">
         
         <header>
-            <h1>Hallo <span id="namaa">User</span> , Selamat datang di website saya</h1>
+            <h1>Hallo <span id="namaa">User</span> , Selamat datang di website kami</h1>
         </header>
-
+    <!--Banner slide-->
         <article>
-            <p>Ini adalah webiste portofolio saya</p>
+            <p>Ini adalah webiste portofolio kami</p>
             <div class="wrapper">
                 <div class="slides">
                     <span id="slide-1"></span>
@@ -44,7 +44,7 @@
                         <img src="https://bigid.com/wp-content/uploads/2021/01/jocelyne-yvonne-tUANuNvPh3E-unsplash-1020x600.jpg" />
                     </div>
                 </div>
-                
+    <!--Navigation di banner slide-->
                 <div class="navigation-wrapper">
                     <a href="#slide-1">1</a>
                     <a href="#slide-2">2</a>
@@ -89,12 +89,25 @@
     <hr />
     
   <!--Portofolio Content-->
+    <section id="portofolio">
+        <header>
+            <h1>Portofolio</h1>
+            <article>
+                <div class="gambar-portofolio">
+                    <img src="https://blog.sekolahdesain.id/wp-content/uploads/2023/05/Untitled-design-2023-05-05T102227.867.png"/>
+                </div>
+                
+            </article>
+        </header>
 
+    </section>
+    <hr />
   <!--Message Us Content-->
     <section id="message-us">
         <header class="head-message">
             <h1>Message Us</h1>
         </header>
+  <!--Isi form-->
         <article class="form-data">
     <form name="message-form" onsubmit="return validateForm()">
         Nama: <input placeholder="Nama" type="text" name="full-name" />
@@ -111,12 +124,13 @@
         <label for="female">Perempuan</label>
         <br />
 
-        Pesan:
+        Pesan: <br />
         <textarea placeholder="Pesan" name="messages"></textarea>
         <br />
 
         <input type = "submit" value="Submit" />
     </form>
+    <!--Hasil Data-->
     <div class="hasil-data">
         <p>Nama: <span id="sender-full-name"></span></p>
         <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
@@ -129,6 +143,10 @@
 
     </section>
   </main>
+  <hr />
+  <footer>
+    <p>Created by Ezekiel</p>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 </html>

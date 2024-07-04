@@ -1,14 +1,24 @@
 /*Ini CSS*/
-
+body {
+    background-color: beige;
+}
+head {
+    background-color: beige;
+}
+footer {
+    background-color: beige;
+    text-align: center;
+}
 main {
     padding: 32px;
 }
+/*Style container*/
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+/*Style icon*/
 .logo-icon {
     height: 50px;
     width: 50px;
@@ -24,7 +34,7 @@ nav>a {
     padding-right: 32px;
     border: 1px solid;
 }
-
+/*Image di banner slide*/
 .images {
     
     display: flex;
@@ -58,6 +68,7 @@ nav>a {
 #slide-4:target~.images {
     margin-left: -300%;
 }
+/*Navigasi di banner slide*/
 .navigation-wrapper a {
     display: inline-block;
     height: 25px;
@@ -81,12 +92,29 @@ nav>a {
     text-align: center;
     margin-top: -50px;
 }
+/*gambar di portofolio*/
+
+.gambar-portofolio {
+    width:100%;
+    display:flex
+
+}
+
+.gambar-portofolio img {
+    width: 100%;
+}
 
 @media screen and (max-width:1020px){
     .wrapper {
         width: 90%;
     }
+    .gambar-portofolio {
+        width:100%;
+    
+    }
 }
+
+/*Profile*/
 
 .profile-content {
     display: flex;
@@ -121,20 +149,20 @@ nav>a {
     background-image:url(https://picsum.photos/id/64/500/500);
 }
 
-
+/*Style untuk form*/
 .form-data {
     display: flex;
     justify-content: center;
     
 }
-
+/*Kotak untuk hasil dari form*/
 .hasil-data {
     border: 1px solid;
     margin-left: 50px;
     width: 600px;
     
 }
-
+/*Menu header biar ga biru sama gaada garis*/
 .menu-header a{
     text-decoration: none;
     border: 1px solid #000;
@@ -142,7 +170,7 @@ nav>a {
     padding: 5px;
     border-radius: 10%
 }
-
+/* Supaya our profile lebih bagus*/
 .divider {
     flex:2
 }
@@ -152,5 +180,6 @@ nav>a {
         flex-direction: column;
         justify-content: space-between;
     }
+ 
+    }
     
-}
